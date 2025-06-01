@@ -11,11 +11,11 @@ website:
         text: Home
       - about.qmd
   open-graph: true
-  
+
 format:
   html:
     theme:
-      - cosmo
+      - slate
       - brand
     css: styles.css
     toc: true
