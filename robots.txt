@@ -1,1 +1,1 @@
-Sitemap: https://jonvanausdeln.github.io/mySite/sitemap.xml
+Sitemap: https://jonvanausdeln.com/sitemap.xml
