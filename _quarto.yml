@@ -9,7 +9,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - text: About
+        href: about.qmd
     right:
       - icon: github
         href: https://github.com/jonvanausdeln
