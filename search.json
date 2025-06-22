@@ -2,8 +2,15 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Jon V.",
     "section": "",
-    "text": "End of Line."
+    "text": "I am a person, a father, and an engineer. But I can’t be contained by those simple constraints. For this exercise in “aboutness” it will be kept a little more focused."
+  },
+  {
+    "objectID": "about.html#professional",
+    "href": "about.html#professional",
+    "title": "Jon V.",
+    "section": "Professional",
+    "text": "Professional\nI am commonly referred to as a Software QA Engineer, or a Software Development Engineer in Test (SDET). Basically, I try to make the products the best they can be by breaking them. I do that with other software. Hence the “Software” part of the descriptor.\nI’ve been doing this for a long time (25 years at this point), so I have lots of opinions. Many of them are good, and I’m sure some are not. They are solely my opinions, so don’t ever construe them as being more than that."
   }
 ]
