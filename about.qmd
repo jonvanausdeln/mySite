@@ -1,5 +1,24 @@
 ---
-title: "About"
+title: "Jon V."
+about: 
+    template: trestles
+    image: https://d3i6yjsou7qnid.cloudfront.net/profile_hoodie.jpg
+    links: 
+        - icon: github
+          text: GitHub
+          href: https://github.com/jonvanausdeln
+          target: _blank
 ---
+
+I am a person, a father, and an engineer.  But I can't be contained by those simple constraints.
+For this exercise in "*aboutness*" it will be kept a little more focused.
+
+## Professional
+I am commonly referred to as a Software QA Engineer, or a Software Development Engineer in Test (SDET). Basically, I try to make the products the best they can be by breaking them.  I do that with other software.  Hence the "Software" part of the descriptor.
+
+I've been doing this for a long time (25 years at this point), so I have lots of opinions. Many of them are good, and I'm sure some are not.  They are solely my opinions, so don't ever construe them as being more than that.
+
+# Personal
+Those who know... Know.  While things I may put on this site might have a personal flair, I won't be doing it too much. 
 
 End of Line.

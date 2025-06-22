@@ -10,6 +10,10 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/jonvanausdeln
+        target: _blank
   open-graph: true
 
 format:
