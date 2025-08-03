@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Jon Vanausdeln"
+  favicon: "JRV-logo.png"
   navbar:
     left:
       - href: index.qmd
