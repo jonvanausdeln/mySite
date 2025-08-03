@@ -1,1 +1,8 @@
-/* css styles */
+h1, h2, h3 {
+  color: #dadbdc; /* Blue for headings */
+}
+
+
+p { 
+    color: #dadbdc
+}

@@ -15,6 +15,9 @@ website:
       - icon: github
         href: https://github.com/jonvanausdeln
         target: _blank
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jonvanausdeln/
+        target: _blank
   open-graph: true
 
 format:
