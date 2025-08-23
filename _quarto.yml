@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Jon Vanausdeln"
+  site-url: "https://www.jonvanausdlen.com"
   favicon: "JRV-logo.png"
   navbar:
     left:
