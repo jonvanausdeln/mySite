@@ -1,41 +1,30 @@
 ---
-title: "The Site"
-format:
-  html:
-    css: styles.css
+title: ""
+format: html
 ---
 
 <div class="hero-section">
-  <h1 class="hero-title">Welcome to The Site</h1>
+  <h1 class="hero-title">Welcome.</h1>
   <p class="hero-subtitle">Discover amazing content and explore our features</p>
 </div>
 
-<div class="tiles-container">
-  <div class="tile">
-    <div class="tile-icon">📊</div>
-    <h3 class="tile-title">Analytics</h3>
-    <p class="tile-description">View detailed analytics and insights about your data and performance metrics.</p>
-    <a href="analytics.qmd" class="tile-link">Explore Analytics</a>
-  </div>
+::: {.tiles-container}
   
-  <div class="tile">
-    <div class="tile-icon">🚀</div>
-    <h3 class="tile-title">Projects</h3>
-    <p class="tile-description">Browse and manage your projects with our intuitive project management tools.</p>
-    <a href="projects.qmd" class="tile-link">View Projects</a>
-  </div>
+::: {.tile}
+<a href="about.qmd" class="tile-link">About Me</a>
+
+::: {.tile-hidden-text}
+<a href="about.qmd" class="hero-subtitle">Like it says, Learn about Me.</a>
+
+:::
+
+:::
   
-  <div class="tile">
-    <div class="tile-icon">👥</div>
-    <h3 class="tile-title">Team</h3>
-    <p class="tile-description">Meet our team members and learn about their expertise and contributions.</p>
-    <a href="team.qmd" class="tile-link">Meet the Team</a>
-  </div>
+::: {.tile}
+  <a href="about.qmd" class="tile-link">View Projects</a>
+  <div class="tile-hidden-text">Sup?</div>
+
+:::
   
-  <div class="tile">
-    <div class="tile-icon">📚</div>
-    <h3 class="tile-title">Resources</h3>
-    <p class="tile-description">Access helpful resources, documentation, and learning materials.</p>
-    <a href="resources.qmd" class="tile-link">Browse Resources</a>
-  </div>
-</div>
+
+:::
