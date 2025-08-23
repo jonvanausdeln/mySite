@@ -1,5 +1,34 @@
 ---
-title: "The Site"
+title: ""
+format: html
 ---
 
-![](https://d3i6yjsou7qnid.cloudfront.net/coming-soon.jpg)
+<div class="hero-section">
+  <h1 class="hero-title">Welcome.</h1>
+  <p class="hero-subtitle">There are my sites like this. This one is mine.</p>
+</div>
+
+::: {.tiles-container}
+  
+::: {.tile}
+<a href="about.qmd" class="tile-link">About Me</a>
+
+::: {.tile-hidden-text}
+<a href="about.qmd" class="hero-subtitle">Like it says, Learn about Me.</a>
+
+:::
+
+:::
+  
+<!-- ::: {.tile}
+  <a href="blog.qmd" class="tile-link">The Blog</a>
+
+::: {.tile-hidden-text}
+<a href="blog.qmd" class="hero-subtitle">My thoughts on many things.</a>
+
+:::
+
+::: -->
+  
+
+:::

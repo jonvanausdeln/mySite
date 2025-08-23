@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Jon Vanausdeln"
+  site-url: "https://www.jonvanausdlen.com"
   favicon: "JRV-logo.png"
   navbar:
     left:
@@ -20,6 +21,8 @@ website:
         href: https://www.linkedin.com/in/jonvanausdeln/
         target: _blank
   open-graph: true
+  page-footer: 
+    left: "End of Line"
 
 format:
   html:
