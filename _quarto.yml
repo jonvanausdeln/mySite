@@ -7,6 +7,7 @@ website:
   title: "Jon Vanausdeln"
   site-url: "https://www.jonvanausdlen.com"
   favicon: "JRV-logo.png"
+  google-analytics: "G-1Q94CN29V0"
   navbar:
     left:
       - href: index.qmd
@@ -23,8 +24,6 @@ website:
   open-graph: true
   page-footer: 
     left: "End of Line"
-  open-graph: true
-  google-analytics: G-1Q94CN29V0
 
 format:
   html:
