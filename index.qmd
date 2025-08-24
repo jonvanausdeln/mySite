@@ -5,7 +5,7 @@ format: html
 
 <div class="hero-section">
   <h1 class="hero-title">Welcome.</h1>
-  <p class="hero-subtitle">There are my sites like this. This one is mine.</p>
+  <p class="hero-subtitle">There are many sites like this.<br>This one is mine.</p>
 </div>
 
 ::: {.tiles-container}
