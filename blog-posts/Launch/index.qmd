@@ -1,0 +1,11 @@
+---
+title: "In the beginning."
+author: "Jon"
+date: "2025-08-23"
+description: "This is where it all starts"
+categories: [Announcements]
+---
+
+This is where my blog begins.  I can't say what topics it will cover, what I will say.  All opinions and content are my own. They don't represent anyone else nor any company I my be working for at the time.  
+
+I hope you can get something useful from it all. But the true purpose is for me, and me alone.
