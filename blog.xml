@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Jon Vanausdeln</title>
+<link>https://www.jonvanausdlen.com/blog.html</link>
+<atom:link href="https://www.jonvanausdlen.com/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.7.33</generator>
+<lastBuildDate>Sat, 23 Aug 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>In the beginning.</title>
+  <dc:creator>Jon </dc:creator>
+  <link>https://www.jonvanausdlen.com/blog-posts/Launch/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is where my blog begins. I can’t say what topics it will cover, what I will say. All opinions and content are my own. They don’t represent anyone else nor any company I my be working for at the time.</p>
+<p>I hope you can get something useful from it all. But the true purpose is for me, and me alone.</p>
+
+
+
+ ]]></description>
+  <category>Announcements</category>
+  <guid>https://www.jonvanausdlen.com/blog-posts/Launch/</guid>
+  <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
