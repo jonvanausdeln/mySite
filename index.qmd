@@ -20,7 +20,7 @@ format: html
 
 :::
   
-<!-- ::: {.tile}
+::: {.tile}
   <a href="blog.qmd" class="tile-link">The Blog</a>
 
 ::: {.tile-hidden-text}
@@ -28,7 +28,6 @@ format: html
 
 :::
 
-::: -->
-  
+:::
 
 :::
