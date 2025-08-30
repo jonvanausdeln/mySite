@@ -1,0 +1,9 @@
+---
+title: "Rocks and Claude."
+author: "Jon"
+date: "2025-08-24"
+description: "This is where it all starts"
+categories: [Announcements]
+---
+![](https://d3i6yjsou7qnid.cloudfront.net/obsidian%2Bclaude.png)
+
