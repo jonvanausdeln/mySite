@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Jon Vanausdeln</title>
-<link>https://www.jonvanausdlen.com/blog.html</link>
-<atom:link href="https://www.jonvanausdlen.com/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.jonvanausdeln.com/blog.html</link>
+<atom:link href="https://www.jonvanausdeln.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.7.34</generator>
 <lastBuildDate>Sat, 23 Aug 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>In the beginning.</title>
   <dc:creator>Jon </dc:creator>
-  <link>https://www.jonvanausdlen.com/blog-posts/Launch/</link>
+  <link>https://www.jonvanausdeln.com/blog-posts/Launch/</link>
   <description><![CDATA[ 
 
 
@@ -27,7 +27,7 @@
 
  ]]></description>
   <category>Announcements</category>
-  <guid>https://www.jonvanausdlen.com/blog-posts/Launch/</guid>
+  <guid>https://www.jonvanausdeln.com/blog-posts/Launch/</guid>
   <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
