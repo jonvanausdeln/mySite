@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jon">
+<meta name="dcterms.date" content="2025-08-31">
+<meta name="description" content="My take on organizing my workday. Let the machines do it!">
 
-<title>The Blog. – Jon Vanausdeln</title>
+<title>Rocks and Claude. – Jon Vanausdeln</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./JRV-logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-638d6150c284198a6fcacf16ec2958a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../JRV-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-638d6150c284198a6fcacf16ec2958a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +106,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1Q94CN29V0"></script>
 
 <script type="text/javascript">
@@ -109,38 +116,10 @@ gtag('js', new Date());
 gtag('config', 'G-1Q94CN29V0', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Jon Vanausdeln" href="blog.xml" data-external="1"><meta property="og:title" content="The Blog. – Jon Vanausdeln">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Rocks and Claude. – Jon Vanausdeln">
+<meta property="og:description" content="My take on organizing my workday. Let the machines do it!">
 <meta property="og:site_name" content="Jon Vanausdeln">
 </head>
 
@@ -151,7 +130,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Jon Vanausdeln</span>
     </a>
   </div>
@@ -162,11 +141,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -193,21 +172,54 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QW5ub3VuY2VtZW50cw==">Announcements <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGlwcw==">Tips <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VG9vbHM=">Tools <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a>
+  <ul class="collapse">
+  <li><a href="#kick-rocks" id="toc-kick-rocks" class="nav-link" data-scroll-target="#kick-rocks">Kick Rocks</a></li>
+  <li><a href="#now-the-magic-happens" id="toc-now-the-magic-happens" class="nav-link" data-scroll-target="#now-the-magic-happens">Now the Magic happens</a></li>
+  </ul></li>
+  <li><a href="#final-thoughts-and-takeaways" id="toc-final-thoughts-and-takeaways" class="nav-link" data-scroll-target="#final-thoughts-and-takeaways">Final Thoughts and takeaways</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Blog.</h1>
-</div>
+<h1 class="title">Rocks and Claude.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tips</div>
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    My take on organizing my workday. Let the machines do it!
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jon </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 31, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -217,77 +229,140 @@ window.Quarto = {
 </header>
 
 
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>I’ve spent years searching for a note-taking solution that met my needs and just <em>feels right</em>. Yes, it is a vague feeling. I won’t go into all my criteria nor all the different solutions I’ve tried. I picked <a href="https://obsidian.md/" target="_blank">Obsidian.md Notes</a>.</p>
+<p>Now enter the real problem, how do I organize it all? Not just organizing of the notes, but of the content. My tasks become just bullets scattered throughout my notes. I know.. I’ll let the machines do it.</p>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="https://d3i6yjsou7qnid.cloudfront.net/obsidian%2Bclaude.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="VGlwcyUyQ1Rvb2xz" data-listing-date-sort="1756598400000" data-listing-file-modified-sort="1756659128888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="897">
-<div class="thumbnail"><a href="./blog-posts/getting-organized/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog-posts/getting-organized/index.html" class="no-external">Rocks and Claude.</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VGlwcw=='); return false;">Tips</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog-posts/getting-organized/index.html" class="no-external">
-<p>My take on organizing my workday. Let the machines do it!</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog-posts/getting-organized/index.html" class="no-external">
-<div class="listing-date">
-Aug 31, 2025
-</div>
-<div class="listing-author">
-Jon
-</div>
-</a>
+</div><div class="column" style="width:65%;">
+<p><br> <br> While saying it’s AI would be appropriate, it’s not the complete solution. As per my usual, I’m not going to go into great detail, but you should get the idea. There’s some thought you need to put into it, but Skynet helps</p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50cw==" data-listing-date-sort="1755907200000" data-listing-file-modified-sort="1756659128888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
-<div class="thumbnail"><a href="./blog-posts/Launch/index.html" class="no-external">
+<section id="kick-rocks" class="level3">
+<h3 class="anchored" data-anchor-id="kick-rocks">Kick Rocks</h3>
+<p>If you aren’t familiar with Obsidian, you should hit the link up there and check it out. <em>TLDR</em> ~ It’s all based on markdown documents and an engine to render the markdown. Being all text files makes it easier for our good buddy Claude to do it’s thang.</p>
+<p>I use the core <code>Daily notes</code> and <code>Templates</code> extensions, and also <code>tasks</code> and <code>templater</code> community extensions. I set up a daily note template that is very regimented. <em>Bonus - ask Claude to help setup the template</em></p>
+<p>Here is my example</p>
+<div class="indented-code">
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> {{date:YYYY-MM-DD}}</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> [work, daily]</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># {{date:dddd, MMMM D, YYYY}}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I need to do Today</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="co">[</span><span class="ot">!info</span><span class="co">]</span><span class="at"> Previous Tasks</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;```tasks</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; not done</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; created before today</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;```</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I did Today</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">```tasks</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">done on today</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">### Issues Verified</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Meetings</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Misc Notes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The <em>Previous Tasks</em> uses the <code>tasks</code> extension to pull in things I didn’t finish to the top. And I have separate files for each meeting, but this gives me a place to quickly take notes, then add them to the meeting note later.</p>
+<p>Then comes the weekly roundup. Again a template.. and I again suggest letting the machines draft something that is most efficient for it. This is also a template only used by the ai agent (I’ll get to that later).</p>
+<div class="indented-code">
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">  "{ date:YYYY-MM-DD }": </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">week:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  "{ date:YYYY-'W'ww }": </span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - summary</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - weekly</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu"># Weekly Task Summary: {{date:MMMM D, YYYY}} - {{date+7d:MMMM D, YYYY}}</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Completed Tasks</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">### {{date:dddd, MMMM D}}</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">### {{date+1d:dddd, MMMM D}}</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### {{date+2d:dddd, MMMM D}}</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### {{date+3d:dddd, MMMM D}}</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### {{date+4d:dddd, MMMM D}}</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Accomplishments</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Issues Verified</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## PRs/Contributions</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Notes for Next Week</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I like having each day explained, and then some summaries.</p>
+</section>
+<section id="now-the-magic-happens" class="level3">
+<h3 class="anchored" data-anchor-id="now-the-magic-happens">Now the Magic happens</h3>
+<p>Before unleashing the beast, you need to give it guardrails.</p>
+<p>You’ll notice a theme at this point.. ask Claude to create the <code>CLAUDE.md</code> file to use as instructions. Be nice and descriptive about what you want it summarize and how. I’m not posting all of mine here, but here is the section telling it how to find completed work:</p>
+<div class="indented-code">
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Task Summary Generation</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>When you need to look for completed and uncompleted tasks:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Look for completed tasks in these locations:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Daily Notes folder</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Any project-specific files in the <span class="in">`Projects`</span> folder.</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Action items in meeting notes (found in the <span class="in">`Meetings`</span> folder)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Count the following as completed tasks:</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Markdown checkboxes with <span class="in">`- [x]`</span> format</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Items listed under "What I've done" or "Completed" sections</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>There may be duplicates, those should only be counted once.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You will have several iterations of the templates and these instructions. So now I startup Claude Code in my Obsidian vault and ask it for a weekly summary. After some machinations, it spits out a new weekly summary markdown to use as my ‘status’ report. I’ve come to find it very handy also to summarize my day and help me plan what to attack next.</p>
+<p>Like most things, it will probably always be a work in progress. I just recently asked Claude how to optimize the process for speed and cost. It gave me several ideas I need to implement.</p>
+</section>
+</section>
+<section id="final-thoughts-and-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts-and-takeaways">Final Thoughts and takeaways</h2>
+<p>This is my workflow.. do with it what you will. I feel it can serve as example of how to use AI as tool, to make you more valuable and efficient. But I am still in control. That’s the key.</p>
+<p>A few things I’ve learned:</p>
+<ul>
+<li>There is an Obsidian MCP extension out there (maybe two), but I found it slower and more costly than just letting Claude Code parse through the file system itself. It was about 20% faster, and about 1/2 the cost when just using its built-in tools and parsing the markdown files.</li>
+<li>Be clear and explicit in the <code>claude.md</code> instruction file. Tell it where to look and where NOT to look for the information</li>
+<li>Explicitly tell Claude how to do some actions, such as writing small scripts to parse .md files for the task syntax. Basically providing it very small tools catered toward this specific task.</li>
+</ul>
+<p>Future Improvements:</p>
+<ul>
+<li>Have it do more file organization for me. Such as moving past weeks notes into some archive folder structure.</li>
+<li>Claude should be able to parse out the files and help me organize my thoughts.. look for patterns in my thinking and then help me come up with better directions for my problem solving.</li>
+<li>Hook in the Github MCP server so it can pull more details for GH issues I work on.. allowing me to keep better notes about what I find.</li>
+</ul>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog-posts/Launch/index.html" class="no-external">In the beginning.</a>
-</h3>
-<div class="listing-categories">
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('QW5ub3VuY2VtZW50cw=='); return false;">Announcements</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog-posts/Launch/index.html" class="no-external">
-<p>This is where it all starts</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog-posts/Launch/index.html" class="no-external">
-<div class="listing-date">
-Aug 23, 2025
-</div>
-<div class="listing-author">
-Jon
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

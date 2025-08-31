@@ -10,7 +10,285 @@
 <atom:link href="https://www.jonvanausdeln.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.34</generator>
-<lastBuildDate>Sat, 23 Aug 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 31 Aug 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Rocks and Claude.</title>
+  <dc:creator>Jon </dc:creator>
+  <link>https://www.jonvanausdeln.com/blog-posts/getting-organized/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>I’ve spent years searching for a note-taking solution that met my needs and just <em>feels right</em>. Yes, it is a vague feeling. I won’t go into all my criteria nor all the different solutions I’ve tried. I picked <a href="https://obsidian.md/" target="_blank">Obsidian.md Notes</a>.</p>
+<p>Now enter the real problem, how do I organize it all? Not just organizing of the notes, but of the content. My tasks become just bullets scattered throughout my notes. I know.. I’ll let the machines do it.</p>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="https://d3i6yjsou7qnid.cloudfront.net/obsidian%2Bclaude.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:65%;">
+<p><br> <br> While saying it’s AI would be appropriate, it’s not the complete solution. As per my usual, I’m not going to go into great detail, but you should get the idea. There’s some thought you need to put into it, but Skynet helps</p>
+</div>
+</div>
+<section id="kick-rocks" class="level3">
+<h3 class="anchored" data-anchor-id="kick-rocks">Kick Rocks</h3>
+<p>If you aren’t familiar with Obsidian, you should hit the link up there and check it out. <em>TLDR</em> ~ It’s all based on markdown documents and an engine to render the markdown. Being all text files makes it easier for our good buddy Claude to do it’s thang.</p>
+<p>I use the core <code>Daily notes</code> and <code>Templates</code> extensions, and also <code>tasks</code> and <code>templater</code> community extensions. I set up a daily note template that is very regimented. <em>Bonus - ask Claude to help setup the template</em></p>
+<p>Here is my example</p>
+<div class="indented-code">
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb1-2"><span class="an" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">date:</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"> {{date:YYYY-MM-DD}}</span></span>
+<span id="cb1-3"><span class="an" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">tags:</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"> [work, daily]</span></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb1-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"># {{date:dddd, MMMM D, YYYY}}</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## What I need to do Today</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">&gt; </span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">[</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">!info</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">]</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Previous Tasks</span></span>
+<span id="cb1-10"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">&gt;```tasks</span></span>
+<span id="cb1-11"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">&gt; not done</span></span>
+<span id="cb1-12"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">&gt; created before today</span></span>
+<span id="cb1-13"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">&gt;```</span></span>
+<span id="cb1-14"></span>
+<span id="cb1-15"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## What I did Today</span></span>
+<span id="cb1-16"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```tasks</span></span>
+<span id="cb1-17"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">done on today</span></span>
+<span id="cb1-18"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span>
+<span id="cb1-19"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">### Issues Verified</span></span>
+<span id="cb1-20"></span>
+<span id="cb1-21"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Meetings</span></span>
+<span id="cb1-22"></span>
+<span id="cb1-23"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Misc Notes</span></span></code></pre></div>
+</div>
+<p>The <em>Previous Tasks</em> uses the <code>tasks</code> extension to pull in things I didn’t finish to the top. And I have separate files for each meeting, but this gives me a place to quickly take notes, then add them to the meeting note later.</p>
+<p>Then comes the weekly roundup. Again a template.. and I again suggest letting the machines draft something that is most efficient for it. This is also a template only used by the ai agent (I’ll get to that later).</p>
+<div class="indented-code">
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb2-2"><span class="an" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">date:</span></span>
+<span id="cb2-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  "{ date:YYYY-MM-DD }": </span></span>
+<span id="cb2-4"><span class="an" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">week:</span></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  "{ date:YYYY-'W'ww }": </span></span>
+<span id="cb2-6"><span class="an" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">tags:</span></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  - summary</span></span>
+<span id="cb2-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  - weekly</span></span>
+<span id="cb2-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb2-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"># Weekly Task Summary: {{date:MMMM D, YYYY}} - {{date+7d:MMMM D, YYYY}}</span></span>
+<span id="cb2-11"></span>
+<span id="cb2-12"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Completed Tasks</span></span>
+<span id="cb2-13"></span>
+<span id="cb2-14"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">### {{date:dddd, MMMM D}}</span></span>
+<span id="cb2-15"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-16"></span>
+<span id="cb2-17"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">### {{date+1d:dddd, MMMM D}}</span></span>
+<span id="cb2-18"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-19"></span>
+<span id="cb2-20"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">### {{date+2d:dddd, MMMM D}}</span></span>
+<span id="cb2-21"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-22"></span>
+<span id="cb2-23"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">### {{date+3d:dddd, MMMM D}}</span></span>
+<span id="cb2-24"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-25"></span>
+<span id="cb2-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">### {{date+4d:dddd, MMMM D}}</span></span>
+<span id="cb2-27"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-28"></span>
+<span id="cb2-29"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Key Accomplishments</span></span>
+<span id="cb2-30"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-31"></span>
+<span id="cb2-32"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Issues Verified</span></span>
+<span id="cb2-33"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-34"></span>
+<span id="cb2-35"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## PRs/Contributions</span></span>
+<span id="cb2-36"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span>
+<span id="cb2-37"></span>
+<span id="cb2-38"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Notes for Next Week</span></span>
+<span id="cb2-39"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">- </span></span></code></pre></div>
+</div>
+<p>I like having each day explained, and then some summaries.</p>
+</section>
+<section id="now-the-magic-happens" class="level3">
+<h3 class="anchored" data-anchor-id="now-the-magic-happens">Now the Magic happens</h3>
+<p>Before unleashing the beast, you need to give it guardrails.</p>
+<p>You’ll notice a theme at this point.. ask Claude to create the <code>CLAUDE.md</code> file to use as instructions. Be nice and descriptive about what you want it summarize and how. I’m not posting all of mine here, but here is the section telling it how to find completed work:</p>
+<div class="indented-code">
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Task Summary Generation</span></span>
+<span id="cb3-2"></span>
+<span id="cb3-3">When you need to look for completed and uncompleted tasks:</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">1. </span>Look for completed tasks in these locations:</span>
+<span id="cb3-6"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">   - </span>Daily Notes folder</span>
+<span id="cb3-7"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">   - </span>Any project-specific files in the <span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">`Projects`</span> folder.</span>
+<span id="cb3-8"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">   - </span>Action items in meeting notes (found in the <span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">`Meetings`</span> folder)</span>
+<span id="cb3-9"></span>
+<span id="cb3-10"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">2. </span>Count the following as completed tasks:</span>
+<span id="cb3-11"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">   - </span>Markdown checkboxes with <span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">`- [x]`</span> format</span>
+<span id="cb3-12"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">   - </span>Items listed under "What I've done" or "Completed" sections</span>
+<span id="cb3-13"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">   - </span>There may be duplicates, those should only be counted once.</span></code></pre></div>
+</div>
+<p>You will have several iterations of the templates and these instructions. So now I startup Claude Code in my Obsidian vault and ask it for a weekly summary. After some machinations, it spits out a new weekly summary markdown to use as my ‘status’ report. I’ve come to find it very handy also to summarize my day and help me plan what to attack next.</p>
+<p>Like most things, it will probably always be a work in progress. I just recently asked Claude how to optimize the process for speed and cost. It gave me several ideas I need to implement.</p>
+</section>
+</section>
+<section id="final-thoughts-and-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts-and-takeaways">Final Thoughts and takeaways</h2>
+<p>This is my workflow.. do with it what you will. I feel it can serve as example of how to use AI as tool, to make you more valuable and efficient. But I am still in control. That’s the key.</p>
+<p>A few things I’ve learned:</p>
+<ul>
+<li>There is an Obsidian MCP extension out there (maybe two), but I found it slower and more costly than just letting Claude Code parse through the file system itself. It was about 20% faster, and about 1/2 the cost when just using its built-in tools and parsing the markdown files.</li>
+<li>Be clear and explicit in the <code>claude.md</code> instruction file. Tell it where to look and where NOT to look for the information</li>
+<li>Explicitly tell Claude how to do some actions, such as writing small scripts to parse .md files for the task syntax. Basically providing it very small tools catered toward this specific task.</li>
+</ul>
+<p>Future Improvements:</p>
+<ul>
+<li>Have it do more file organization for me. Such as moving past weeks notes into some archive folder structure.</li>
+<li>Claude should be able to parse out the files and help me organize my thoughts.. look for patterns in my thinking and then help me come up with better directions for my problem solving.</li>
+<li>Hook in the Github MCP server so it can pull more details for GH issues I work on.. allowing me to keep better notes about what I find.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>Tips</category>
+  <category>Tools</category>
+  <guid>https://www.jonvanausdeln.com/blog-posts/getting-organized/</guid>
+  <pubDate>Sun, 31 Aug 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>In the beginning.</title>
   <dc:creator>Jon </dc:creator>

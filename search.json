@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "The Blog.",
     "section": "",
-    "text": "In the beginning.\n\n\n\nAnnouncements\n\n\n\nThis is where it all starts\n\n\n\n\n\nAug 23, 2025\n\n\nJon\n\n\n\n\n\nNo matching items"
+    "text": "Rocks and Claude.\n\n\n\nTips\n\nTools\n\n\n\nMy take on organizing my workday. Let the machines do it!\n\n\n\n\n\nAug 31, 2025\n\n\nJon\n\n\n\n\n\n\n\n\n\n\n\n\nIn the beginning.\n\n\n\nAnnouncements\n\n\n\nThis is where it all starts\n\n\n\n\n\nAug 23, 2025\n\n\nJon\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -12,6 +12,34 @@
     "title": "Jon V.",
     "section": "",
     "text": "I am a person, a father, and an engineer. But I can’t be contained by those simple constraints. For this exercise in “aboutness” it will be kept a little more focused.\n\nProfessional\nI am commonly referred to as a Software QA Engineer, or a Software Development Engineer in Test (SDET). Basically, I try to make the products the best they can be by breaking them. I do that with other software. Hence the “Software” part of the descriptor.\nI’ve been doing this for a long time (25 years at this point), so I have lots of opinions. Many of them are good, and I’m sure some are not. They are solely my opinions, so don’t ever construe them as being more than that.\n\n\nPersonal\nThose who know… Know. While things I may put on this site might have a personal flair, I won’t be doing it too much.\nEnd of Line.\n      \n      \n      \n          \n    \n    What I'm Reading\n    \n      \n          \n            \n          \n          \n            Wolves Among the Stars\n          \n          \n            by J.N. Chaney\n          \n      \n  \n  \n    \n  \n  \n    Share &lt;a rel=\"nofollow\" href=\"https://www.goodreads.com/\"&gt;book reviews&lt;/a&gt; and ratings with Jon, and even join a &lt;a rel=\"nofollow\" href=\"https://www.goodreads.com/group\"&gt;book club&lt;/a&gt; on Goodreads."
+  },
+  {
+    "objectID": "blog-posts/getting-organized/index.html",
+    "href": "blog-posts/getting-organized/index.html",
+    "title": "Rocks and Claude.",
+    "section": "",
+    "text": "I’ve spent years searching for a note-taking solution that met my needs and just feels right. Yes, it is a vague feeling. I won’t go into all my criteria nor all the different solutions I’ve tried. I picked Obsidian.md Notes.\nNow enter the real problem, how do I organize it all? Not just organizing of the notes, but of the content. My tasks become just bullets scattered throughout my notes. I know.. I’ll let the machines do it."
+  },
+  {
+    "objectID": "blog-posts/getting-organized/index.html#the-problem",
+    "href": "blog-posts/getting-organized/index.html#the-problem",
+    "title": "Rocks and Claude.",
+    "section": "",
+    "text": "I’ve spent years searching for a note-taking solution that met my needs and just feels right. Yes, it is a vague feeling. I won’t go into all my criteria nor all the different solutions I’ve tried. I picked Obsidian.md Notes.\nNow enter the real problem, how do I organize it all? Not just organizing of the notes, but of the content. My tasks become just bullets scattered throughout my notes. I know.. I’ll let the machines do it."
+  },
+  {
+    "objectID": "blog-posts/getting-organized/index.html#the-solution",
+    "href": "blog-posts/getting-organized/index.html#the-solution",
+    "title": "Rocks and Claude.",
+    "section": "The Solution",
+    "text": "The Solution\n\n\n\n\n\n\n  While saying it’s AI would be appropriate, it’s not the complete solution. As per my usual, I’m not going to go into great detail, but you should get the idea. There’s some thought you need to put into it, but Skynet helps\n\n\n\nKick Rocks\nIf you aren’t familiar with Obsidian, you should hit the link up there and check it out. TLDR ~ It’s all based on markdown documents and an engine to render the markdown. Being all text files makes it easier for our good buddy Claude to do it’s thang.\nI use the core Daily notes and Templates extensions, and also tasks and templater community extensions. I set up a daily note template that is very regimented. Bonus - ask Claude to help setup the template\nHere is my example\n\n---\ndate: {{date:YYYY-MM-DD}}\ntags: [work, daily]\n---\n# {{date:dddd, MMMM D, YYYY}}\n\n## What I need to do Today\n\n&gt; [!info] Previous Tasks\n&gt;```tasks\n&gt; not done\n&gt; created before today\n&gt;```\n\n## What I did Today\n```tasks\ndone on today\n```\n### Issues Verified\n\n## Meetings\n\n## Misc Notes\n\nThe Previous Tasks uses the tasks extension to pull in things I didn’t finish to the top. And I have separate files for each meeting, but this gives me a place to quickly take notes, then add them to the meeting note later.\nThen comes the weekly roundup. Again a template.. and I again suggest letting the machines draft something that is most efficient for it. This is also a template only used by the ai agent (I’ll get to that later).\n\n---\ndate:\n  \"{ date:YYYY-MM-DD }\": \nweek:\n  \"{ date:YYYY-'W'ww }\": \ntags:\n  - summary\n  - weekly\n---\n# Weekly Task Summary: {{date:MMMM D, YYYY}} - {{date+7d:MMMM D, YYYY}}\n\n## Completed Tasks\n\n### {{date:dddd, MMMM D}}\n- \n\n### {{date+1d:dddd, MMMM D}}\n- \n\n### {{date+2d:dddd, MMMM D}}\n- \n\n### {{date+3d:dddd, MMMM D}}\n- \n\n### {{date+4d:dddd, MMMM D}}\n- \n\n## Key Accomplishments\n- \n\n## Issues Verified\n- \n\n## PRs/Contributions\n- \n\n## Notes for Next Week\n- \n\nI like having each day explained, and then some summaries.\n\n\nNow the Magic happens\nBefore unleashing the beast, you need to give it guardrails.\nYou’ll notice a theme at this point.. ask Claude to create the CLAUDE.md file to use as instructions. Be nice and descriptive about what you want it summarize and how. I’m not posting all of mine here, but here is the section telling it how to find completed work:\n\n## Task Summary Generation\n\nWhen you need to look for completed and uncompleted tasks:\n\n1. Look for completed tasks in these locations:\n   - Daily Notes folder\n   - Any project-specific files in the `Projects` folder.\n   - Action items in meeting notes (found in the `Meetings` folder)\n\n2. Count the following as completed tasks:\n   - Markdown checkboxes with `- [x]` format\n   - Items listed under \"What I've done\" or \"Completed\" sections\n   - There may be duplicates, those should only be counted once.\n\nYou will have several iterations of the templates and these instructions. So now I startup Claude Code in my Obsidian vault and ask it for a weekly summary. After some machinations, it spits out a new weekly summary markdown to use as my ‘status’ report. I’ve come to find it very handy also to summarize my day and help me plan what to attack next.\nLike most things, it will probably always be a work in progress. I just recently asked Claude how to optimize the process for speed and cost. It gave me several ideas I need to implement."
+  },
+  {
+    "objectID": "blog-posts/getting-organized/index.html#final-thoughts-and-takeaways",
+    "href": "blog-posts/getting-organized/index.html#final-thoughts-and-takeaways",
+    "title": "Rocks and Claude.",
+    "section": "Final Thoughts and takeaways",
+    "text": "Final Thoughts and takeaways\nThis is my workflow.. do with it what you will. I feel it can serve as example of how to use AI as tool, to make you more valuable and efficient. But I am still in control. That’s the key.\nA few things I’ve learned:\n\nThere is an Obsidian MCP extension out there (maybe two), but I found it slower and more costly than just letting Claude Code parse through the file system itself. It was about 20% faster, and about 1/2 the cost when just using its built-in tools and parsing the markdown files.\nBe clear and explicit in the claude.md instruction file. Tell it where to look and where NOT to look for the information\nExplicitly tell Claude how to do some actions, such as writing small scripts to parse .md files for the task syntax. Basically providing it very small tools catered toward this specific task.\n\nFuture Improvements:\n\nHave it do more file organization for me. Such as moving past weeks notes into some archive folder structure.\nClaude should be able to parse out the files and help me organize my thoughts.. look for patterns in my thinking and then help me come up with better directions for my problem solving.\nHook in the Github MCP server so it can pull more details for GH issues I work on.. allowing me to keep better notes about what I find."
   },
   {
     "objectID": "blog-posts/Launch/index.html",
