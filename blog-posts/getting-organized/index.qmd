@@ -1,9 +1,9 @@
 ---
 title: "Rocks and Claude."
 author: "Jon"
-date: "2025-08-24"
+date: "2025-08-31"
 description: "My take on organizing my workday. \n Let the machines do it!"
-categories: [Announcements]
+categories: [Tips, Tools]
 ---
 
 ## The problem
