@@ -6,6 +6,7 @@ project:
 website:
   title: "Jon Vanausdeln"
   site-url: "https://www.jonvanausdeln.com"
+  description: "It's my party."
   favicon: "JRV-logo.png"
   google-analytics: "G-1Q94CN29V0"
   navbar:
