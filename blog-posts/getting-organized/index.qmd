@@ -1,0 +1,165 @@
+---
+title: "Rocks and Claude."
+author: "Jon"
+date: "2025-08-31"
+description: "My take on organizing my workday. \n Let the machines do it!"
+categories: [Tips, Tools]
+---
+
+## The problem
+
+I've spent years searching for a note-taking solution that met my needs and just _feels right_. Yes, it is a vague feeling. I won't go into all my criteria nor all the different solutions I've tried.  I picked [Obsidian.md Notes](https://obsidian.md/){target="_blank"}.
+
+
+Now enter the real problem, how do I organize it all? Not just organizing of the notes, but of the content. My tasks become just bullets scattered throughout my notes. I know.. I'll let the machines do it.
+
+## The Solution
+
+::: {.columns}
+
+::: {.column width="30%"}
+![](https://d3i6yjsou7qnid.cloudfront.net/obsidian%2Bclaude.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+
+<br>
+<br>
+While saying it's AI would be appropriate, it's not the complete solution. As per my usual, I'm not going to go into great detail, but you should get the idea. There's some thought you need to put into it, but Skynet helps
+:::
+
+:::
+
+### Kick Rocks
+
+If you aren't familiar with Obsidian, you should hit the link up there and check it out.  _TLDR_ ~ It's all based on markdown documents and an engine to render the markdown. Being all text files makes it easier for our good buddy Claude to do it's thang.
+
+
+I use the core `Daily notes` and `Templates` extensions, and also `tasks` and `templater` community extensions.  I set up a daily note template that is very regimented. _Bonus - ask Claude to help setup the template_
+
+Here is my example
+
+::: {.indented-code}
+````markdown
+---
+date: {{date:YYYY-MM-DD}}
+tags: [work, daily]
+---
+# {{date:dddd, MMMM D, YYYY}}
+
+## What I need to do Today
+
+> [!info] Previous Tasks
+>```tasks
+> not done
+> created before today
+>```
+
+## What I did Today
+```tasks
+done on today
+```
+### Issues Verified
+
+## Meetings
+
+## Misc Notes
+````
+:::
+
+The _Previous Tasks_ uses the `tasks` extension to pull in things I didn't finish to the top.  And I have separate files for each meeting, but this gives me a place to quickly take notes, then add them to the meeting note later.  
+
+Then comes the weekly roundup.  Again a template.. and I again suggest letting the machines draft something that is most efficient for it.  This is also a template only used by the ai agent (I'll get to that later).
+
+::: {.indented-code}
+````markdown
+---
+date:
+  "{ date:YYYY-MM-DD }": 
+week:
+  "{ date:YYYY-'W'ww }": 
+tags:
+  - summary
+  - weekly
+---
+# Weekly Task Summary: {{date:MMMM D, YYYY}} - {{date+7d:MMMM D, YYYY}}
+
+## Completed Tasks
+
+### {{date:dddd, MMMM D}}
+- 
+
+### {{date+1d:dddd, MMMM D}}
+- 
+
+### {{date+2d:dddd, MMMM D}}
+- 
+
+### {{date+3d:dddd, MMMM D}}
+- 
+
+### {{date+4d:dddd, MMMM D}}
+- 
+
+## Key Accomplishments
+- 
+
+## Issues Verified
+- 
+
+## PRs/Contributions
+- 
+
+## Notes for Next Week
+- 
+````
+:::
+
+I like having each day explained, and then some summaries.
+
+### Now the Magic happens
+
+Before unleashing the beast, you need to give it guardrails.
+
+You'll notice a theme at this point.. ask Claude to create the `CLAUDE.md` file to use as instructions.  Be nice and descriptive about what you want it summarize and how.  I'm not posting all of  mine here, but here is the section telling it how to find completed work:
+
+::: {.indented-code}
+````markdown
+## Task Summary Generation
+
+When you need to look for completed and uncompleted tasks:
+
+1. Look for completed tasks in these locations:
+   - Daily Notes folder
+   - Any project-specific files in the `Projects` folder.
+   - Action items in meeting notes (found in the `Meetings` folder)
+
+2. Count the following as completed tasks:
+   - Markdown checkboxes with `- [x]` format
+   - Items listed under "What I've done" or "Completed" sections
+   - There may be duplicates, those should only be counted once.
+````
+:::
+
+You will have several iterations of the templates and these instructions.  So now I startup Claude Code in my Obsidian vault and ask it for a weekly summary.  After some machinations, it spits out a new weekly summary markdown to use as my 'status' report.  I've come to find it very handy also to summarize my day and help me plan what to attack next.
+
+Like most things, it will probably always be a work in progress. I just recently asked Claude how to optimize the process for speed and cost. It gave me several ideas I need to implement.
+
+## Final Thoughts and takeaways
+
+This is my workflow.. do with it what you will.  I feel it can serve as example of how to use AI as tool, to make you more valuable and efficient. But I am still in control. That's the key.
+
+A few things I've learned:
+
+- There is an Obsidian MCP extension out there (maybe two), but I found it slower and more costly than just letting Claude Code parse through the file system itself.  It was about 20% faster, and about 1/2 the cost when just using its built-in tools and parsing the markdown files. 
+- Be clear and explicit in the `claude.md` instruction file.  Tell it where to look and where NOT to look for the information
+- Explicitly tell Claude how to do some actions, such as writing small scripts to parse .md files for the task syntax. Basically providing it very small tools catered toward this specific task.
+
+Future Improvements:
+
+- Have it do more file organization for me. Such as moving past weeks notes into some archive folder structure.
+- Claude should be able to parse out the files and help me organize my thoughts.. look for patterns in my thinking and then help me come up with better directions for my problem solving.
+- Hook in the Github MCP server so it can pull more details for GH issues I work on.. allowing me to keep better notes about what I find.
