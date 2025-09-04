@@ -7,7 +7,7 @@ website:
   title: "Jon Vanausdeln"
   site-url: "https://www.jonvanausdeln.com"
   description: "It's my party."
-  favicon: "JRV-logo.png"
+  favicon: "assets/images/JRV-logo.png"
   google-analytics: "G-1Q94CN29V0"
   navbar:
     left:
@@ -31,7 +31,7 @@ format:
     theme:
       - slate
       - brand
-    css: styles.css
+    css: assets/css/styles.css
     toc: true
 
 execute: 
