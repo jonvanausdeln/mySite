@@ -14,6 +14,13 @@
     "text": "I am a person, a father, and an engineer. But I can’t be contained by those simple constraints. For this exercise in “aboutness” it will be kept a little more focused.\n\nProfessional\nI am commonly referred to as a Software QA Engineer, or a Software Development Engineer in Test (SDET). Basically, I try to make the products the best they can be by breaking them. I do that with other software. Hence the “Software” part of the descriptor.\nI’ve been doing this for a long time (25 years at this point), so I have lots of opinions. Many of them are good, and I’m sure some are not. They are solely my opinions, so don’t ever construe them as being more than that.\n\n\nPersonal\nThose who know… Know. While things I may put on this site might have a personal flair, I won’t be doing it too much.\nEnd of Line.\n      \n      \n      \n          \n    \n    What I'm Reading\n    \n      \n          \n            \n          \n          \n            Wolves Among the Stars\n          \n          \n            by J.N. Chaney\n          \n      \n  \n  \n    \n  \n  \n    Share &lt;a rel=\"nofollow\" href=\"https://www.goodreads.com/\"&gt;book reviews&lt;/a&gt; and ratings with Jon, and even join a &lt;a rel=\"nofollow\" href=\"https://www.goodreads.com/group\"&gt;book club&lt;/a&gt; on Goodreads."
   },
   {
+    "objectID": "blog-posts/Launch/index.html",
+    "href": "blog-posts/Launch/index.html",
+    "title": "In the beginning.",
+    "section": "",
+    "text": "This is where my blog begins. I can’t say what topics it will cover, what I will say. All opinions and content are my own. They don’t represent anyone else nor any company I my be working for at the time.\nI hope you can get something useful from it all. But the true purpose is for me, and me alone."
+  },
+  {
     "objectID": "blog-posts/getting-organized/index.html",
     "href": "blog-posts/getting-organized/index.html",
     "title": "Rocks and Claude.",
@@ -42,11 +49,53 @@
     "text": "Final Thoughts and takeaways\nThis is my workflow.. do with it what you will. I feel it can serve as example of how to use AI as tool, to make you more valuable and efficient. But I am still in control. That’s the key.\nA few things I’ve learned:\n\nThere is an Obsidian MCP extension out there (maybe two), but I found it slower and more costly than just letting Claude Code parse through the file system itself. It was about 20% faster, and about 1/2 the cost when just using its built-in tools and parsing the markdown files.\nBe clear and explicit in the claude.md instruction file. Tell it where to look and where NOT to look for the information\nExplicitly tell Claude how to do some actions, such as writing small scripts to parse .md files for the task syntax. Basically providing it very small tools catered toward this specific task.\n\nFuture Improvements:\n\nHave it do more file organization for me. Such as moving past weeks notes into some archive folder structure.\nClaude should be able to parse out the files and help me organize my thoughts.. look for patterns in my thinking and then help me come up with better directions for my problem solving.\nHook in the Github MCP server so it can pull more details for GH issues I work on.. allowing me to keep better notes about what I find."
   },
   {
-    "objectID": "blog-posts/Launch/index.html",
-    "href": "blog-posts/Launch/index.html",
-    "title": "In the beginning.",
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md",
     "section": "",
-    "text": "This is where my blog begins. I can’t say what topics it will cover, what I will say. All opinions and content are my own. They don’t represent anyone else nor any company I my be working for at the time.\nI hope you can get something useful from it all. But the true purpose is for me, and me alone."
+    "text": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n\nThis is a Quarto-based personal website for Jon Vanausdeln hosted at https://www.jonvanausdeln.com. The site uses Quarto’s static site generation to create a personal website with blog functionality. Most of the content will have a technology focus and Software Quality assurance.\n\n\n\n\nQuarto Website: Built using Quarto with YAML configuration in _quarto.yml\nContent Structure:\n\nMain pages: index.qmd, about.qmd, blog.qmd\nBlog posts: Individual directories under blog-posts/ containing index.qmd files\nStatic assets: JRV-logo.png, styles.css\n\nTheme: Uses “slate” and “brand” themes with custom CSS\nDeployment: Automated via GitHub Actions to GitHub Pages\n\n\n\n\nSince this is a Quarto project, the primary commands are:\n# Preview the site locally (serves at localhost:4200 by default)\nquarto preview\n\n# Render/build the site\nquarto render\n\n# Publish to GitHub Pages (handled automatically by CI/CD)\nquarto publish gh-pages\n\n\n\n\nBlog Posts: Create new directories under blog-posts/ with an index.qmd file\nPages: Add new .qmd files in the root directory and update navigation in _quarto.yml\nStyling: Modify styles.css for custom styling\nSite Configuration: Update _quarto.yml for site-wide settings\n\n\n\n\nThe site automatically deploys to GitHub Pages via the workflow in .github/workflows/publish.yml when changes are pushed to the main branch. The workflow uses Quarto’s official GitHub Actions.\n\n\n\n\nSite metadata and navigation defined in _quarto.yml\nGoogle Analytics tracking enabled\nOpen Graph metadata enabled\nFreeze execution mode for reproducible builds"
+  },
+  {
+    "objectID": "CLAUDE.html#project-overview",
+    "href": "CLAUDE.html#project-overview",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This is a Quarto-based personal website for Jon Vanausdeln hosted at https://www.jonvanausdeln.com. The site uses Quarto’s static site generation to create a personal website with blog functionality. Most of the content will have a technology focus and Software Quality assurance."
+  },
+  {
+    "objectID": "CLAUDE.html#architecture",
+    "href": "CLAUDE.html#architecture",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Quarto Website: Built using Quarto with YAML configuration in _quarto.yml\nContent Structure:\n\nMain pages: index.qmd, about.qmd, blog.qmd\nBlog posts: Individual directories under blog-posts/ containing index.qmd files\nStatic assets: JRV-logo.png, styles.css\n\nTheme: Uses “slate” and “brand” themes with custom CSS\nDeployment: Automated via GitHub Actions to GitHub Pages"
+  },
+  {
+    "objectID": "CLAUDE.html#development-commands",
+    "href": "CLAUDE.html#development-commands",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Since this is a Quarto project, the primary commands are:\n# Preview the site locally (serves at localhost:4200 by default)\nquarto preview\n\n# Render/build the site\nquarto render\n\n# Publish to GitHub Pages (handled automatically by CI/CD)\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "CLAUDE.html#content-management",
+    "href": "CLAUDE.html#content-management",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Blog Posts: Create new directories under blog-posts/ with an index.qmd file\nPages: Add new .qmd files in the root directory and update navigation in _quarto.yml\nStyling: Modify styles.css for custom styling\nSite Configuration: Update _quarto.yml for site-wide settings"
+  },
+  {
+    "objectID": "CLAUDE.html#deployment",
+    "href": "CLAUDE.html#deployment",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "The site automatically deploys to GitHub Pages via the workflow in .github/workflows/publish.yml when changes are pushed to the main branch. The workflow uses Quarto’s official GitHub Actions."
+  },
+  {
+    "objectID": "CLAUDE.html#key-configuration",
+    "href": "CLAUDE.html#key-configuration",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Site metadata and navigation defined in _quarto.yml\nGoogle Analytics tracking enabled\nOpen Graph metadata enabled\nFreeze execution mode for reproducible builds"
   },
   {
     "objectID": "index.html",
