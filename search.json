@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "The Blog.",
     "section": "",
-    "text": "Rocks and Claude.\n\n\n\nTips\n\nTools\n\n\n\nMy take on organizing my workday. Let the machines do it!\n\n\n\n\n\nAug 31, 2025\n\n\nJon\n\n\n\n\n\n\n\n\n\n\n\n\nIn the beginning.\n\n\n\nAnnouncements\n\n\n\nThis is where it all starts\n\n\n\n\n\nAug 23, 2025\n\n\nJon\n\n\n\n\n\nNo matching items"
+    "text": "No Dial Tone\n\n\n\ntechnology\n\n\n\nPlease just stop with the yearly drop\n\n\n\n\n\nSep 10, 2025\n\n\nJon Vanausdeln\n\n\n\n\n\n\n\n\n\n\n\n\nRocks and Claude.\n\n\n\nTips\n\nTools\n\n\n\nMy take on organizing my workday. Let the machines do it!\n\n\n\n\n\nAug 31, 2025\n\n\nJon\n\n\n\n\n\n\n\n\n\n\n\n\nIn the beginning.\n\n\n\nAnnouncements\n\n\n\nThis is where it all starts\n\n\n\n\n\nAug 23, 2025\n\n\nJon\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -14,11 +14,11 @@
     "text": "I am a person, a father, and an engineer. But I can’t be contained by those simple constraints. For this exercise in “aboutness” it will be kept a little more focused.\n\nProfessional\nI am commonly referred to as a Software QA Engineer, or a Software Development Engineer in Test (SDET). Basically, I try to make the products the best they can be by breaking them. I do that with other software. Hence the “Software” part of the descriptor.\nI’ve been doing this for a long time (25 years at this point), so I have lots of opinions. Many of them are good, and I’m sure some are not. They are solely my opinions, so don’t ever construe them as being more than that.\n\n\nPersonal\nThose who know… Know. While things I may put on this site might have a personal flair, I won’t be doing it too much.\nEnd of Line.\n      \n      \n      \n          \n    \n    What I'm Reading\n    \n      \n          \n            \n          \n          \n            Wolves Among the Stars\n          \n          \n            by J.N. Chaney\n          \n      \n  \n  \n    \n  \n  \n    Share &lt;a rel=\"nofollow\" href=\"https://www.goodreads.com/\"&gt;book reviews&lt;/a&gt; and ratings with Jon, and even join a &lt;a rel=\"nofollow\" href=\"https://www.goodreads.com/group\"&gt;book club&lt;/a&gt; on Goodreads."
   },
   {
-    "objectID": "blog-posts/Launch/index.html",
-    "href": "blog-posts/Launch/index.html",
-    "title": "In the beginning.",
+    "objectID": "blog-posts/no-dial-tone/index.html",
+    "href": "blog-posts/no-dial-tone/index.html",
+    "title": "No Dial Tone",
     "section": "",
-    "text": "This is where my blog begins. I can’t say what topics it will cover, what I will say. All opinions and content are my own. They don’t represent anyone else nor any company I my be working for at the time.\nI hope you can get something useful from it all. But the true purpose is for me, and me alone."
+    "text": "🚨🚨 NERD ALERT 🚨🚨\n\n\n\n\n\n\nOnce again the 🍎 📱 is all the rage. All us nerds flocked to livestreams, blogs, whatever we could get our grubby Dorito-covered hands on the quickest.\nWe stare slack-jawed at our screens, waiting for the supreme leader nerds to give us… what? Really, what? What is it that we need now?\nI have the answer… not a new phone. It’s time for all of us hunchback monkeys to come to grips with a simple fact: Phones are really good now. Whatever neat-o new things the ghost of Jobs adds just isn’t that big a deal anymore. Not one of us can squint through our dirty coke bottle lenses and see one bit of difference from the last screen resolution to this one. The packages go from bigger to smaller, back to bigger. From thick to thin, back to thick again. Wash, rinse, repeat. Just stop. Please stop.\nWhat we all really need? The small tweaks that make things easier. Bug fixes. Fix all the little things that really piss us off, but we’ve come to just accept. I’ll go first. When I’m connected to my car, and want to take a screenshot of whatever is on my PHONE screen, I don’t need said screen capture to include the map I have up on my car infotainment center.\nOr how about you just lower the price? Make it more affordable. Better the environment. Something to actually help us all… not cram another shiny toy at us that gives all the youths FOMO if mommy or daddy (not the sugar variety) don’t run out right away and drop a rack on it.\nJust stop."
   },
   {
     "objectID": "blog-posts/getting-organized/index.html",
@@ -47,6 +47,13 @@
     "title": "Rocks and Claude.",
     "section": "Final Thoughts and takeaways",
     "text": "Final Thoughts and takeaways\nThis is my workflow.. do with it what you will. I feel it can serve as example of how to use AI as tool, to make you more valuable and efficient. But I am still in control. That’s the key.\nA few things I’ve learned:\n\nThere is an Obsidian MCP extension out there (maybe two), but I found it slower and more costly than just letting Claude Code parse through the file system itself. It was about 20% faster, and about 1/2 the cost when just using its built-in tools and parsing the markdown files.\nBe clear and explicit in the claude.md instruction file. Tell it where to look and where NOT to look for the information\nExplicitly tell Claude how to do some actions, such as writing small scripts to parse .md files for the task syntax. Basically providing it very small tools catered toward this specific task.\n\nFuture Improvements:\n\nHave it do more file organization for me. Such as moving past weeks notes into some archive folder structure.\nClaude should be able to parse out the files and help me organize my thoughts.. look for patterns in my thinking and then help me come up with better directions for my problem solving.\nHook in the Github MCP server so it can pull more details for GH issues I work on.. allowing me to keep better notes about what I find."
+  },
+  {
+    "objectID": "blog-posts/Launch/index.html",
+    "href": "blog-posts/Launch/index.html",
+    "title": "In the beginning.",
+    "section": "",
+    "text": "This is where my blog begins. I can’t say what topics it will cover, what I will say. All opinions and content are my own. They don’t represent anyone else nor any company I my be working for at the time.\nI hope you can get something useful from it all. But the true purpose is for me, and me alone."
   },
   {
     "objectID": "CLAUDE.html",
