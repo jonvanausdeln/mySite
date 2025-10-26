@@ -30,4 +30,24 @@ format: html
 
 :::
 
+::: {.tile}
+  <a href="projects.qmd" class="tile-link">Projects</a>
+
+::: {.tile-hidden-text}
+<a href="projects.qmd" class="hero-subtitle">Things I've done you might want to see.</a>
+
+:::
+
+:::
+
+::: {.tile}
+  <a href="https://youtu.be/dQw4w9WgXcQ?si=_IikNGle0IJhRyA9" class="tile-link">Secrets</a>
+
+::: {.tile-hidden-text}
+<a href="https://youtu.be/dQw4w9WgXcQ?si=_IikNGle0IJhRyA9" class="hero-subtitle">Don't tell anyone</a>
+
+:::
+
+:::
+
 :::

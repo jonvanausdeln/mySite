@@ -1,0 +1,13 @@
+---
+title: "You've been served"
+author: "Jon Vanausdeln"
+date: "2025-10-26"
+categories: [technology, announcement]
+description: "Let's talk about mcp, and all the good things and bad things may be."
+---
+
+Just a little announcement.
+
+I've added a new Projects page to the site.  You should check out the first entry, a Discord MCP server.  I like it. It works. And no, I'm not providing a link. If you made it this far, you can find it yourself.
+
+

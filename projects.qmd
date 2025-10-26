@@ -1,0 +1,17 @@
+---
+title: "Projects"
+---
+
+# Overview
+These are my project, not yours.
+
+---
+
+# Discord MCP Server
+I tried a few different other servers for discord, and all had some problem that annoyed me.  So I decided to just build my own. It's my first foray into making an mcp server.
+
+**Technologies:** typescript, [discord.js](https://discord.js.org/)
+
+
+[View on GitHub](https://github.com/jonvanausdeln/discord-mcp){.tile-link}
+---
