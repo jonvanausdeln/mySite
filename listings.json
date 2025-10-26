@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog-posts/youve-been-served/index.html",
       "/blog-posts/no-dial-tone/index.html",
       "/blog-posts/getting-organized/index.html",
       "/blog-posts/Launch/index.html"

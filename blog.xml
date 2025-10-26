@@ -9,8 +9,28 @@
 <link>https://www.jonvanausdeln.com/blog.html</link>
 <atom:link href="https://www.jonvanausdeln.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>It&#39;s my party.</description>
-<generator>quarto-1.7.34</generator>
-<lastBuildDate>Wed, 10 Sep 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Sun, 26 Oct 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>You’ve been served</title>
+  <dc:creator>Jon Vanausdeln</dc:creator>
+  <link>https://www.jonvanausdeln.com/blog-posts/youve-been-served/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Just a little announcement.</p>
+<p>I’ve added a new Projects page to the site. You should check out the first entry, a Discord MCP server. I like it. It works. And no, I’m not providing a link. If you made it this far, you can find it yourself.</p>
+
+
+
+ ]]></description>
+  <category>technology</category>
+  <category>announcement</category>
+  <guid>https://www.jonvanausdeln.com/blog-posts/youve-been-served/</guid>
+  <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>No Dial Tone</title>
   <dc:creator>Jon Vanausdeln</dc:creator>
@@ -20,13 +40,13 @@
 
 
 
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🚨🚨 NERD ALERT 🚨🚨
+<span class="screen-reader-only">Caution</span>🚨🚨 NERD ALERT 🚨🚨
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -79,7 +99,7 @@
 <p>I use the core <code>Daily notes</code> and <code>Templates</code> extensions, and also <code>tasks</code> and <code>templater</code> community extensions. I set up a daily note template that is very regimented. <em>Bonus - ask Claude to help setup the template</em></p>
 <p>Here is my example</p>
 <div class="indented-code">
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">---</span></span>
 <span id="cb1-2"><span class="an" style="color: #5E5E5E;
@@ -149,12 +169,12 @@ font-style: inherit;">## Meetings</span></span>
 <span id="cb1-22"></span>
 <span id="cb1-23"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">## Misc Notes</span></span></code></pre></div>
+font-style: inherit;">## Misc Notes</span></span></code></pre></div></div>
 </div>
 <p>The <em>Previous Tasks</em> uses the <code>tasks</code> extension to pull in things I didn’t finish to the top. And I have separate files for each meeting, but this gives me a place to quickly take notes, then add them to the meeting note later.</p>
 <p>Then comes the weekly roundup. Again a template.. and I again suggest letting the machines draft something that is most efficient for it. This is also a template only used by the ai agent (I’ll get to that later).</p>
 <div class="indented-code">
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">---</span></span>
 <span id="cb2-2"><span class="an" style="color: #5E5E5E;
@@ -250,7 +270,7 @@ background-color: null;
 font-style: inherit;">## Notes for Next Week</span></span>
 <span id="cb2-39"><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">- </span></span></code></pre></div>
+font-style: inherit;">- </span></span></code></pre></div></div>
 </div>
 <p>I like having each day explained, and then some summaries.</p>
 </section>
@@ -259,7 +279,7 @@ font-style: inherit;">- </span></span></code></pre></div>
 <p>Before unleashing the beast, you need to give it guardrails.</p>
 <p>You’ll notice a theme at this point.. ask Claude to create the <code>CLAUDE.md</code> file to use as instructions. Be nice and descriptive about what you want it summarize and how. I’m not posting all of mine here, but here is the section telling it how to find completed work:</p>
 <div class="indented-code">
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">## Task Summary Generation</span></span>
 <span id="cb3-2"></span>
@@ -295,7 +315,7 @@ background-color: null;
 font-style: inherit;">   - </span>Items listed under "What I've done" or "Completed" sections</span>
 <span id="cb3-13"><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">   - </span>There may be duplicates, those should only be counted once.</span></code></pre></div>
+font-style: inherit;">   - </span>There may be duplicates, those should only be counted once.</span></code></pre></div></div>
 </div>
 <p>You will have several iterations of the templates and these instructions. So now I startup Claude Code in my Obsidian vault and ask it for a weekly summary. After some machinations, it spits out a new weekly summary markdown to use as my ‘status’ report. I’ve come to find it very handy also to summarize my day and help me plan what to attack next.</p>
 <p>Like most things, it will probably always be a work in progress. I just recently asked Claude how to optimize the process for speed and cost. It gave me several ideas I need to implement.</p>
